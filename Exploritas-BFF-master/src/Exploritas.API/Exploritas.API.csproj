@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Exploritas.API</AssemblyName>
+    <RootNamespace>Exploritas.API</RootNamespace>
+    <UserSecretsId>8ac9c530-b61f-4071-b8cb-6e2c85b4ee88</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModel\**" />
+    <Content Remove="ViewModel\**" />
+    <EmbeddedResource Remove="ViewModel\**" />
+    <None Remove="ViewModel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Exploritas.Application\Exploritas.Application.csproj" />
+    <ProjectReference Include="..\Exploritas.Infrastructure\Exploritas.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>
